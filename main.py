@@ -9,7 +9,7 @@ import scipy.stats
 from scipy import stats
 
 
-def solutionS(self):
+def solutionS():
     lista3 = []
     lista4 = []
     lista5 = []
@@ -92,7 +92,7 @@ def solutionS(self):
     plt.show()
 
 
-def solutionM(self):
+def solutionM():
     lista1M = []
     lista2M = []
     lista3M = []
@@ -215,7 +215,7 @@ def solutionM(self):
     plt.show()
 
 
-def solutionX(self):
+def solutionX():
     lista2X = []
     lista3X = []
     lista4X = []
@@ -472,7 +472,7 @@ def create_window1():
     listboxX.pack(padx=(18, 5), pady=(0, 25))
 
 
-def otra(self):
+def otra():
     E1.config(state=NORMAL)
     E2.config(state=NORMAL)
     listboxF.config(state=NORMAL)
@@ -482,7 +482,7 @@ def otra(self):
     listboxF.delete(0, 'end')
 
 
-def otraM(self):
+def otraM():
     E3.config(state=NORMAL)
     E4.config(state=NORMAL)
     listboxM.config(state=NORMAL)
@@ -492,7 +492,7 @@ def otraM(self):
     listboxM.delete(0, 'end')
 
 
-def otraX(self):
+def otraX():
     E5.config(state=NORMAL)
     E6.config(state=NORMAL)
     E7.config(state=NORMAL)
@@ -558,7 +558,7 @@ filemenu.add_command(label="Regresion Linear Multiple", command=create_window1)
 
 filemenu.add_separator()
 
-filemenu.add_command(label="Exit", command=quit)
+filemenu.add_command(label="Exit", command=root.quit)
 menubar.add_cascade(label="Programs", menu=filemenu)
 
 mainloop()
